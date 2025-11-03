@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export default function Home() {
+ function Home() {
   const [username, setUsername] = useState("");
   const navigate = useNavigate();
 
@@ -20,7 +20,7 @@ export default function Home() {
       transition={{ duration: 0.4 }}
     >
       <h1 className="text-5xl sm:text-6xl font-bold mb-4 text-blue-400">
-        GitHub Finder
+        Git Peek
       </h1>
       <p className="text-gray-400 mb-8 max-w-md">
         Search for any GitHub user and explore their profile details in real time.
@@ -47,5 +47,5 @@ export default function Home() {
     </motion.main>
   );
 }
-
+export default Home();
 

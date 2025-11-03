@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function UserCard({ user }) {
+function UserCard({ user }) {
   return (
     <motion.div
       className="bg-gray-900 p-6 rounded-2xl shadow-lg w-full max-w-sm text-center"
@@ -30,4 +30,6 @@ export default function UserCard({ user }) {
     </motion.div>
   );
 }
+
+export default UserCard();
 

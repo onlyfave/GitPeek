@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Home from "./pages/Home";
 import User from "./pages/User";
 
-export default function App() {
+ function App() {
   const location = useLocation();
 
   return (
@@ -40,5 +40,5 @@ export default function App() {
   );
 }
 
-
+ export default App();
 
