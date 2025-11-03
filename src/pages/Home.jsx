@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
- function Home() {
+ export default function Home() {
   const [username, setUsername] = useState("");
   const navigate = useNavigate();
 
@@ -47,5 +47,5 @@ import { motion } from "framer-motion";
     </motion.main>
   );
 }
-export default Home();
+
 

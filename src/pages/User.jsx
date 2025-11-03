@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
- function User() {
+export default function User() {
   const { username } = useParams();
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -88,4 +88,3 @@ import { motion } from "framer-motion";
   );
 }
 
-export default User();

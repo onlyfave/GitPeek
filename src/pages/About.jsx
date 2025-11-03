@@ -1,4 +1,4 @@
-function About() {
+export default function About() {
   return (
     <div className="flex flex-col items-center justify-center p-6 text-center">
       <h2 className="text-3xl font-bold text-blue-400 mb-4">About GitHub Finder</h2>
@@ -11,4 +11,3 @@ function About() {
   );
 }
 
-export default About();

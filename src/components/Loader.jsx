@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-function Loader() {
+export default function Loader() {
   return (
     <motion.div
       className="mt-8 flex justify-center"
@@ -13,4 +13,3 @@ function Loader() {
 }
 
 
-export default Loader();
