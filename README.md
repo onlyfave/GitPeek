@@ -15,8 +15,7 @@
 - 👤 **View User Details:** avatar, bio, followers, following, and location  
 - 📦 **Explore Repositories** with stars, forks, and language stats  
 - ⚡ **Responsive UI** with Tailwind CSS v3  
-- 🎬 **Smooth animations** using Framer Motion  
-- 🌗 **Dark/Light Mode** toggle  
+- 🎬 **Smooth animations** using Framer Motion   
 - 🧠 **Error Handling** for invalid users and rate limits  
 
 ---
@@ -58,14 +57,6 @@ GitPeek/
 ├── postcss.config.js
 └── README.md
 
----
 
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/yourusername/github-finder.git
-cd github-finder
-```
 
 
