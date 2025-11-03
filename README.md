@@ -1,16 +1,71 @@
-# React + Vite
+# 🧭 GitPeek — GitHub Profile Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18.0+-blue?logo=react)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.0+-38B2AC?logo=tailwind-css)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-Enabled-ff69b4?logo=framer)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-Currently, two official plugins are available:
+> **GitPeek** is a fast and modern web application for searching GitHub users by their username. It displays detailed profile information, repositories, and activity using the GitHub REST API — all wrapped in a sleek, responsive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔍 **Search GitHub Users** instantly by username  
+- 👤 **View User Details:** avatar, bio, followers, following, and location  
+- 📦 **Explore Repositories** with stars, forks, and language stats  
+- ⚡ **Responsive UI** with Tailwind CSS v3  
+- 🎬 **Smooth animations** using Framer Motion  
+- 🌗 **Dark/Light Mode** toggle  
+- 🧠 **Error Handling** for invalid users and rate limits  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧱 Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| Framework | **React.js (Vite)** |
+| Styling | **Tailwind CSS v3** |
+| Animations | **Framer Motion** |
+| Routing | **React Router DOM v6** |
+| API | **GitHub REST API** |
+| Deployment | **Vercel / Netlify** |
+
+---
+
+## 📂 Project Structure
+
+GitPeek/
+├── src/
+│ ├── components/
+│ │ ├── SearchBar.jsx
+│ │ ├── UserCard.jsx
+│ │ ├── RepoList.jsx
+│ │ └── ErrorMessage.jsx
+│ ├── pages/
+│ │ ├── Home.jsx
+│ │ └── UserProfile.jsx
+│ ├── utils/
+│ │ └── fetchUser.js
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
+├── public/
+│ └── favicon.ico
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+└── README.md
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/yourusername/github-finder.git
+cd github-finder
+```
+
+
