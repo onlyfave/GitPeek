@@ -10,6 +10,12 @@
 
 ---
 
+🔗 **Live Demo:** https://git-peek.netlify.app 
+
+📦 **Source Code:** https://github.com/your-username/gitpeek
+
+---
+
 ## 📌 Why GitPeek Exists
 
 GitHub profiles are powerful, but they’re noisy.
