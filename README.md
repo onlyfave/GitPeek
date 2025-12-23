@@ -12,7 +12,7 @@
 
 ## 📌 Why GitPeek Exists
 
-GitHub profiles are powerful — but they’re noisy.
+GitHub profiles are powerful, but they’re noisy.
 
 Recruiters, collaborators, and even developers themselves often struggle to quickly understand:
 - What kind of developer is this?
@@ -91,31 +91,36 @@ All analysis is done in the browser using JavaScript.
 
 ## 📂 Project Structure
 
+```text
 GitPeek/
-├── src/
-│ ├── components/
-│ │ ├── SearchBar.jsx
-│ │ ├── UserCard.jsx
-│ │ ├── RepoList.jsx
-│ │ ├── PersonaCard.jsx
-│ │ └── ErrorMessage.jsx
-│ ├── pages/
-│ │ ├── Home.jsx
-│ │ └── Profile.jsx
-│ ├── services/
-│ │ └── github.js
-│ ├── utils/
-│ │ ├── metrics.js
-│ │ └── persona.js
-│ ├── App.jsx
-│ ├── main.jsx
-│ └── index.css
 ├── public/
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── SearchBar.jsx
+│   │   ├── UserCard.jsx
+│   │   ├── RepoList.jsx
+│   │   ├── PersonaCard.jsx
+│   │   ├── Loader.jsx
+│   │   └── ErrorMessage.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   └── Profile.jsx
+│   ├── services/
+│   │   └── github.js
+│   ├── utils/
+│   │   ├── metrics.js
+│   │   └── persona.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .gitignore
 ├── package.json
 ├── tailwind.config.js
+├── postcss.config.js
 ├── vite.config.js
 └── README.md
-
+```
 ---
 
 ## 🧪 Local Development
@@ -138,11 +143,11 @@ npm run dev
 
 ## 🤝 Contributing
 
-###Contributions are welcome.
--Fork the repository
--Create a feature branch
--Commit your changes
--Open a pull request
+### Contributions are welcome.
+- Fork the repository
+- Create a feature branch
+- Commit your changes
+- Open a pull request
 
 ---
 
