@@ -10,7 +10,9 @@ function RepoDetails() {
   useEffect(() => {
     const fetchRepo = async () => {
       try {
-        const res = await fetch(`https://api.github.com/repos/${username}/${repoName}`);
+        const res = await fetch(
+          `https://api.github.com/repos/${username}/${repoName}`
+        );
         const data = await res.json();
         setRepo(data);
       } catch (err) {
@@ -25,7 +27,7 @@ function RepoDetails() {
   if (loading) return <Loader />;
 
   return (
-    <div className="repo-details fade-in">
+    <div className="repo-details fade-in max-w-4xl mx-auto px-4">
       <h2>{repo.full_name}</h2>
       <p>{repo.description || "No description available."}</p>
       <p>⭐ Stars: {repo.stargazers_count}</p>
@@ -34,10 +36,12 @@ function RepoDetails() {
         View on GitHub
       </a>
       <div style={{ marginTop: "1rem" }}>
-        <Link to="/" className="profile-link">⬅ Back</Link>
+        <Link to="/" className="profile-link">
+          ⬅ Back
+        </Link>
       </div>
     </div>
   );
 }
 
-export default RepoDetails();
+export default RepoDetails;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function SearchBar({ onSearch }) {
+export default function SearchBar({ onSearch }) {
   const [username, setUsername] = useState("");
 
   const handleSubmit = (e) => {
