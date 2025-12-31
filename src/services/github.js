@@ -1,4 +1,4 @@
-const BASE_URL = "https://api.github.com";
+const BASE_URL = "https://gitpeek-backend.onrender.com/api";
 
 export async function fetchUser(username) {
   const res = await fetch(`${BASE_URL}/users/${username}`);

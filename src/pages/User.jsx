@@ -87,7 +87,7 @@ export default function User() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="bg-gray-900 rounded-xl shadow-lg p-8 w-full max-w-md text-center border border-gray-800">
+      <div className="bg-gray-900 rounded-xl shadow-lg p-8 w-full max-w-2xl text-center border border-gray-800">
         <img
           src={data.avatar_url}
           alt={data.login}
