@@ -40,6 +40,10 @@ Instead of dumping raw data, GitPeek emphasizes **patterns, behavior, and trends
 
 ---
 
+<img width="1891" height="974" alt="Screenshot 2026-01-01 110511" src="https://github.com/user-attachments/assets/ef6a3b35-c163-4a75-8375-6970e572e785" />
+
+---
+
 ## 🚀 Core Features
 
 - 🔍 **Instant GitHub User Search**  
