@@ -18,13 +18,17 @@ export default function SearchBar({ onSearch }) {
         value={username}
         onChange={(e) => setUsername(e.target.value)}
         placeholder="Enter GitHub username..."
-        className="flex-grow p-3 rounded-lg bg-gray-800 text-white outline-none"
+        className="flex-grow p-3 rounded-lg bg-card-primary text-text-primary outline-none placeholder-text-muted/80 border border-border-divider font-medium"
       />
       <button
         type="submit"
-        className="bg-blue-500 px-5 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all"
+        className="relative inline-flex items-center justify-center px-5 py-3 rounded-full font-semibold text-text-primary bg-gradient-to-b from-[#9A7BC4] via-[#7C5ACF] to-[#5B3FA3] shadow-lg shadow-[0_8px_20px_rgba(124,90,207,0.45)] ring-1 ring-white/20 transition duration-200 hover:brightness-110 active:scale-95 overflow-hidden"
       >
-        Search
+        <span className="relative z-10">Search</span>
+        <span
+          className="pointer-events-none absolute top-1 left-1 right-1 h-1/2 rounded-full bg-gradient-to-b from-white/50 to-transparent"
+          aria-hidden="true"
+        ></span>
       </button>
     </form>
   );

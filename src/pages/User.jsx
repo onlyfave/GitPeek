@@ -82,31 +82,41 @@ export default function User() {
 
   return (
     <motion.div
-      className="flex flex-col items-center justify-center min-h-screen bg-gray-950 text-white px-4"
+      className="flex flex-col items-center justify-center min-h-screen bg-app-bg text-text-body px-4"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="bg-gray-900 rounded-xl shadow-lg p-8 w-full max-w-2xl text-center border border-gray-800">
+      <div className="bg-card-primary rounded-xl shadow-lg p-8 w-full max-w-2xl text-center border border-border-divider">
         <img
           src={data.avatar_url}
           alt={data.login}
-          className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-600"
+          className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-accent-primary"
         />
-        <h2 className="text-2xl font-bold mb-2">{data.name || data.login}</h2>
-        <p className="text-gray-400 mb-4">{data.bio || "No bio available"}</p>
-        <div className="flex justify-center gap-6 text-gray-300 mb-6">
+        <h2 className="text-2xl font-bold mb-2 text-text-primary">
+          {data.name || data.login}
+        </h2>
+        <p className="text-text-body font-medium mb-4">
+          {data.bio || "No bio available"}
+        </p>
+        <div className="flex justify-center gap-6 text-text-body font-medium mb-6">
           <div>
-            <p className="text-lg font-semibold">{data.followers}</p>
-            <p className="text-sm text-gray-500">Followers</p>
+            <p className="text-lg font-semibold text-text-primary">
+              {data.followers}
+            </p>
+            <p className="text-sm text-text-muted font-normal">Followers</p>
           </div>
           <div>
-            <p className="text-lg font-semibold">{data.public_repos}</p>
-            <p className="text-sm text-gray-500">Repos</p>
+            <p className="text-lg font-semibold text-text-primary">
+              {data.public_repos}
+            </p>
+            <p className="text-sm text-text-muted font-normal">Repos</p>
           </div>
           <div>
-            <p className="text-lg font-semibold">{data.following}</p>
-            <p className="text-sm text-gray-500">Following</p>
+            <p className="text-lg font-semibold text-text-primary">
+              {data.following}
+            </p>
+            <p className="text-sm text-text-muted font-normal">Following</p>
           </div>
         </div>
 
@@ -117,7 +127,7 @@ export default function User() {
         )}
 
         {healthScore && (
-          <div className="mb-6 bg-gray-800 rounded-lg p-6 border border-gray-700">
+          <div className="mb-6 bg-[#08040D] rounded-lg p-6 border border-border-divider">
             <div className="flex items-center justify-center mb-4">
               <div className="relative inline-flex items-center justify-center">
                 <svg className="w-24 h-24 transform -rotate-90">
@@ -126,7 +136,7 @@ export default function User() {
                     cy="48"
                     r="44"
                     fill="none"
-                    stroke="#374151"
+                    stroke="#2A1E44"
                     strokeWidth="2"
                   />
                   <circle
@@ -135,13 +145,11 @@ export default function User() {
                     r="44"
                     fill="none"
                     stroke={
-                      healthScore.score >= 80
-                        ? "#10b981"
-                        : healthScore.score >= 60
-                        ? "#3b82f6"
+                      healthScore.score >= 70
+                        ? "#4ADE80"
                         : healthScore.score >= 40
-                        ? "#f59e0b"
-                        : "#ef4444"
+                        ? "#E0B84F"
+                        : "#E25555"
                     }
                     strokeWidth="2"
                     strokeDasharray={`${
@@ -151,38 +159,42 @@ export default function User() {
                   />
                 </svg>
                 <div className="absolute text-center">
-                  <p className="text-4xl font-bold">{healthScore.score}</p>
-                  <p className="text-xs text-gray-400">Health Score</p>
+                  <p className="text-4xl font-bold text-text-primary">
+                    {healthScore.score}
+                  </p>
+                  <p className="text-xs text-text-muted font-normal">
+                    Health Score
+                  </p>
                 </div>
               </div>
             </div>
 
-            <p className="text-sm text-gray-300 mb-4 leading-relaxed">
+            <p className="text-sm text-text-body font-medium mb-4 leading-relaxed">
               {healthScore.explanation}
             </p>
 
             <div className="grid grid-cols-2 gap-3 text-xs">
-              <div className="bg-gray-700 rounded p-2">
-                <p className="text-gray-400">Activity</p>
-                <p className="font-semibold text-blue-400">
+              <div className="bg-card-primary rounded p-2 border border-border-divider">
+                <p className="text-text-muted font-normal">Activity</p>
+                <p className="font-semibold text-text-primary">
                   {healthScore.breakdown.activity}%
                 </p>
               </div>
-              <div className="bg-gray-700 rounded p-2">
-                <p className="text-gray-400">Code Focus</p>
-                <p className="font-semibold text-green-400">
+              <div className="bg-card-primary rounded p-2 border border-border-divider">
+                <p className="text-text-muted font-normal">Code Focus</p>
+                <p className="font-semibold text-text-primary">
                   {healthScore.breakdown.codeFocus}%
                 </p>
               </div>
-              <div className="bg-gray-700 rounded p-2">
-                <p className="text-gray-400">Maintenance</p>
-                <p className="font-semibold text-purple-400">
+              <div className="bg-card-primary rounded p-2 border border-border-divider">
+                <p className="text-text-muted font-normal">Maintenance</p>
+                <p className="font-semibold text-text-primary">
                   {healthScore.breakdown.maintenance}%
                 </p>
               </div>
-              <div className="bg-gray-700 rounded p-2">
-                <p className="text-gray-400">Collaboration</p>
-                <p className="font-semibold text-pink-400">
+              <div className="bg-card-primary rounded p-2 border border-border-divider">
+                <p className="text-text-muted font-normal">Collaboration</p>
+                <p className="font-semibold text-text-primary">
                   {healthScore.breakdown.collaboration}%
                 </p>
               </div>
@@ -194,13 +206,13 @@ export default function User() {
           href={data.html_url}
           target="_blank"
           rel="noopener noreferrer"
-          className="block w-full py-3 mb-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold"
+          className="block w-full py-3 mb-3 bg-gradient-to-r from-button-start to-button-end hover:brightness-110 rounded-lg font-semibold text-text-primary"
         >
           View on GitHub
         </a>
         <Link
           to="/"
-          className="block w-full py-3 bg-gray-800 hover:bg-gray-700 rounded-lg"
+          className="block w-full py-3 bg-card-primary hover:brightness-110 rounded-lg border border-border-divider text-text-primary"
         >
           Back Home
         </Link>

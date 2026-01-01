@@ -8,15 +8,15 @@ export default function SkeletonLoader() {
 
   return (
     <motion.div
-      className="flex flex-col items-center justify-center min-h-screen bg-gray-950 text-white px-4"
+      className="flex flex-col items-center justify-center min-h-screen bg-app-bg text-text-body px-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="bg-gray-900 rounded-xl shadow-lg p-8 w-full max-w-md border border-gray-800">
+      <div className="bg-card-primary rounded-xl shadow-lg p-8 w-full max-w-2xl border border-border-divider">
         {/* Avatar skeleton */}
         <motion.div
-          className="w-32 h-32 rounded-full mx-auto mb-4 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800"
+          className="w-32 h-32 rounded-full mx-auto mb-4 bg-gradient-to-r from-card-secondary via-[#3A2850] to-card-secondary"
           style={{
             backgroundSize: "200% 100%",
           }}
@@ -28,7 +28,7 @@ export default function SkeletonLoader() {
 
         {/* Name skeleton */}
         <motion.div
-          className="h-8 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded mb-4"
+          className="h-8 bg-gradient-to-r from-card-secondary via-[#3A2850] to-card-secondary rounded mb-4"
           style={{
             backgroundSize: "200% 100%",
           }}
@@ -40,7 +40,7 @@ export default function SkeletonLoader() {
 
         {/* Bio skeleton */}
         <motion.div
-          className="h-4 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded mb-6"
+          className="h-4 bg-gradient-to-r from-card-secondary via-[#3A2850] to-card-secondary rounded mb-6"
           style={{
             backgroundSize: "200% 100%",
           }}
@@ -51,11 +51,11 @@ export default function SkeletonLoader() {
         />
 
         {/* Stats skeleton */}
-        <div className="flex justify-center gap-6 text-gray-300 mb-6">
+        <div className="flex justify-center gap-6 text-text-muted mb-6">
           {[1, 2, 3].map((i) => (
             <div key={i}>
               <motion.div
-                className="h-6 w-12 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded mb-2"
+                className="h-6 w-12 bg-gradient-to-r from-card-secondary via-[#3A2850] to-card-secondary rounded mb-2"
                 style={{
                   backgroundSize: "200% 100%",
                 }}
@@ -65,7 +65,7 @@ export default function SkeletonLoader() {
                 transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
               />
               <motion.div
-                className="h-3 w-16 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded"
+                className="h-3 w-16 bg-gradient-to-r from-card-secondary via-[#3A2850] to-card-secondary rounded"
                 style={{
                   backgroundSize: "200% 100%",
                 }}
@@ -79,9 +79,9 @@ export default function SkeletonLoader() {
         </div>
 
         {/* Persona card skeleton */}
-        <motion.div className="mb-6 p-4 bg-zinc-900 rounded-xl border border-zinc-800">
+        <motion.div className="mb-6 p-4 bg-app-bg rounded-xl border border-border-divider">
           <motion.div
-            className="h-6 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded mb-3"
+            className="h-6 bg-gradient-to-r from-card-secondary via-[#3A2850] to-card-secondary rounded mb-3"
             style={{
               backgroundSize: "200% 100%",
             }}
@@ -91,7 +91,7 @@ export default function SkeletonLoader() {
             transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
           />
           <motion.div
-            className="h-4 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded"
+            className="h-4 bg-gradient-to-r from-card-secondary via-[#3A2850] to-card-secondary rounded"
             style={{
               backgroundSize: "200% 100%",
             }}
@@ -104,7 +104,7 @@ export default function SkeletonLoader() {
 
         {/* Button skeletons */}
         <motion.div
-          className="h-12 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded-lg mb-3"
+          className="h-12 bg-gradient-to-r from-card-secondary via-[#3A2850] to-card-secondary rounded-full mb-3"
           style={{
             backgroundSize: "200% 100%",
           }}
@@ -114,7 +114,7 @@ export default function SkeletonLoader() {
           transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
         />
         <motion.div
-          className="h-12 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded-lg"
+          className="h-12 bg-gradient-to-r from-card-secondary via-[#3A2850] to-card-secondary rounded-full"
           style={{
             backgroundSize: "200% 100%",
           }}
