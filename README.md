@@ -1,3 +1,4 @@
+![GitPeek homepage](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7suit30hkbrv2lm3muxd.png)
 # 🧭 GitPeek — Read Your GitHub Story
 
 ![React](https://img.shields.io/badge/React-18.0+-blue?logo=react)
