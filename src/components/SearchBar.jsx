@@ -9,10 +9,7 @@ export default function SearchBar({ onSearch }) {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="flex gap-3 w-full max-w-md mb-8"
-    >
+    <form onSubmit={handleSubmit} className="flex gap-3 w-full max-w-md mb-8">
       <input
         type="text"
         value={username}
@@ -22,7 +19,7 @@ export default function SearchBar({ onSearch }) {
       />
       <button
         type="submit"
-        className="relative inline-flex items-center justify-center px-5 py-3 rounded-full font-semibold text-text-primary bg-gradient-to-b from-[#9A7BC4] via-[#7C5ACF] to-[#5B3FA3] shadow-lg shadow-[0_8px_20px_rgba(124,90,207,0.45)] ring-1 ring-white/20 transition duration-200 hover:brightness-110 active:scale-95 overflow-hidden"
+        className="relative inline-flex items-center justify-center px-5 py-3 rounded-full font-semibold text-text-primary bg-gradient-to-b from-button-start via-accent-soft to-button-end shadow-lg shadow-[0_8px_20px_rgba(124,90,207,0.45)] ring-1 ring-white/20 transition duration-200 hover:brightness-110 active:scale-95 overflow-hidden"
       >
         <span className="relative z-10">Search</span>
         <span
@@ -33,4 +30,3 @@ export default function SearchBar({ onSearch }) {
     </form>
   );
 }
-

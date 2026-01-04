@@ -60,14 +60,19 @@ export default function User() {
 
   if (error)
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-950 text-white">
-        <p className="text-red-500 mb-4">{error}</p>
-        <Link
-          to="/"
-          className="px-5 py-2 bg-blue-600 hover:bg-blue-700 rounded"
-        >
-          Back Home
-        </Link>
+      <div className="flex flex-col items-center justify-center min-h-screen bg-app-bg text-text-body px-4">
+        <div className="bg-card-primary w-full max-w-md rounded-xl border border-border-divider p-8 shadow-lg text-center">
+          <p className="text-accent-primary font-semibold mb-3">{error}</p>
+          <p className="text-text-muted mb-6">
+            Something went wrong while loading this profile.
+          </p>
+          <Link
+            to="/"
+            className="inline-block w-full py-3 bg-gradient-to-r from-button-start to-button-end hover:brightness-110 rounded-lg font-semibold text-text-primary"
+          >
+            Back Home
+          </Link>
+        </div>
       </div>
     );
 
@@ -127,7 +132,7 @@ export default function User() {
         )}
 
         {healthScore && (
-          <div className="mb-6 bg-[#08040D] rounded-lg p-6 border border-border-divider">
+          <div className="mb-6 bg-card-secondary rounded-lg p-6 border border-border-divider">
             <div className="flex items-center justify-center mb-4">
               <div className="relative inline-flex items-center justify-center">
                 <svg className="w-24 h-24 transform -rotate-90">
@@ -136,7 +141,7 @@ export default function User() {
                     cy="48"
                     r="44"
                     fill="none"
-                    stroke="#2A1E44"
+                    stroke={`rgb(var(--color-ring-track))`}
                     strokeWidth="2"
                   />
                   <circle
@@ -146,10 +151,10 @@ export default function User() {
                     fill="none"
                     stroke={
                       healthScore.score >= 70
-                        ? "#4ADE80"
+                        ? `rgb(var(--color-gitpeek-high))`
                         : healthScore.score >= 40
-                        ? "#E0B84F"
-                        : "#E25555"
+                        ? `rgb(var(--color-gitpeek-avg))`
+                        : `rgb(var(--color-gitpeek-low))`
                     }
                     strokeWidth="2"
                     strokeDasharray={`${

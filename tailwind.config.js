@@ -1,29 +1,36 @@
 /** @type {import('tailwindcss').Config} */
+const withOpacity =
+  (variable) =>
+  ({ opacityValue }) =>
+    opacityValue !== undefined
+      ? `rgb(var(${variable}) / ${opacityValue})`
+      : `rgb(var(${variable}))`;
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        "app-bg": "#0B0612",
-        "card-primary": "#1A1228",
-        "card-secondary": "#24183A",
-        "text-primary": "#F8F7FF",
-        "text-body": "#D8D3EA",
-        "text-muted": "#B6ACD6",
-        "accent-primary": "#7C5ACF",
-        "accent-soft": "#9A7BC4",
-        "border-divider": "rgba(124, 90, 207, 0.35)",
-        "button-start": "#7C5ACF",
-        "button-end": "#6D4C9A",
-        "ring-track": "#2A1E44",
+        "app-bg": withOpacity("--color-app-bg"),
+        "card-primary": withOpacity("--color-card-primary"),
+        "card-secondary": withOpacity("--color-card-secondary"),
+        "text-primary": withOpacity("--color-text-primary"),
+        "text-body": withOpacity("--color-text-body"),
+        "text-muted": withOpacity("--color-text-muted"),
+        "accent-primary": withOpacity("--color-accent-primary"),
+        "accent-soft": withOpacity("--color-accent-soft"),
+        "border-divider": withOpacity("--color-border-divider"),
+        "button-start": withOpacity("--color-button-start"),
+        "button-end": withOpacity("--color-button-end"),
+        "ring-track": withOpacity("--color-ring-track"),
         gitpeek: {
-          ring: "#08040D",
-          low: "#E25555",
-          avg: "#E0B84F",
-          high: "#4ADE80",
+          ring: withOpacity("--color-gitpeek-ring"),
+          low: withOpacity("--color-gitpeek-low"),
+          avg: withOpacity("--color-gitpeek-avg"),
+          high: withOpacity("--color-gitpeek-high"),
         },
       },
     },
   },
   plugins: [],
-}
+};

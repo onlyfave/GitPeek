@@ -2,8 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-app-bg text-text-body;
+:root {
+  --color-app-bg: 11 6 18;
+  --color-card-primary: 26 18 40;
+  --color-card-secondary: 36 24 58;
+  --color-text-primary: 248 247 255;
+  --color-text-body: 216 211 234;
+  --color-text-muted: 182 172 214;
+  --color-accent-primary: 124 90 207;
+  --color-accent-soft: 154 123 196;
+  --color-border-divider: 124 90 207;
+  --color-button-start: 124 90 207;
+  --color-button-end: 109 76 154;
+  --color-ring-track: 42 30 68;
+  --color-gitpeek-ring: 8 4 13;
+  --color-gitpeek-low: 226 85 85;
+  --color-gitpeek-avg: 224 184 79;
+  --color-gitpeek-high: 74 222 128;
 }
 
+.theme-light {
+  --color-app-bg: 246 245 255;
+  --color-card-primary: 255 255 255;
+  --color-card-secondary: 237 233 255;
+  --color-text-primary: 28 18 48;
+  --color-text-body: 61 45 82;
+  --color-text-muted: 108 94 140;
+  --color-accent-primary: 106 80 179;
+  --color-accent-soft: 137 113 196;
+  --color-border-divider: 106 80 179;
+  --color-button-start: 126 96 207;
+  --color-button-end: 100 74 160;
+  --color-ring-track: 225 214 255;
+  --color-gitpeek-ring: 232 229 246;
+  --color-gitpeek-low: 222 85 85;
+  --color-gitpeek-avg: 210 180 90;
+  --color-gitpeek-high: 40 187 106;
+}
 
+body {
+  @apply bg-app-bg text-text-body transition-colors duration-300;
+}
