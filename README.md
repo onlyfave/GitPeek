@@ -5,7 +5,7 @@
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-Enabled-ff69b4?logo=framer)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-> **GitPeek** is a modern web application that goes beyond searching GitHub profiles.  
+> **GitPeek** is a web application that goes beyond searching GitHub profiles.  
 > It interprets public GitHub data to help you understand **how a developer works**, not just what they’ve built.
 
 ---
@@ -37,6 +37,10 @@ GitPeek fetches public GitHub data and presents it in a way that is:
 - Human-readable
 
 Instead of dumping raw data, GitPeek emphasizes **patterns, behavior, and trends**.
+
+---
+
+<img width="1891" height="974" alt="Screenshot 2026-01-01 110511" src="https://github.com/user-attachments/assets/ef6a3b35-c163-4a75-8375-6970e572e785" />
 
 ---
 
