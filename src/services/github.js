@@ -43,4 +43,3 @@ export async function fetchCommits(owner, repo) {
     return [];
   }
 }
-
