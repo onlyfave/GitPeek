@@ -135,7 +135,7 @@ GitPeek/
 ## 🧪 Local Development
 
 ### Prerequisites
-- Node.js (v16 or higher)
+- Node.js
 - npm or yarn
 
 ### Setup
