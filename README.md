@@ -83,8 +83,6 @@ Instead of dumping raw data, GitPeek emphasizes **patterns, behavior, and trends
    - Repository insights  
    - Activity indicators  
 
-
-
 ---
 
 ## 🧱 Tech Stack
