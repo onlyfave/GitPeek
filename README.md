@@ -51,7 +51,7 @@ Instead of dumping raw data, GitPeek emphasizes **patterns, behavior, and trends
   Search any public GitHub profile by username.
 
 - 👤 **Developer Profile Overview**  
-  View avatar, bio, followers, following, and location.
+  View avatar, bio, followers, and following.
 
 - 📦 **Repository Exploration**  
   Browse public repositories with stars, forks, languages, and last activity.
