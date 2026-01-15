@@ -89,7 +89,7 @@ Instead of dumping raw data, GitPeek emphasizes **patterns, behavior, and trends
 
 | Category | Technology |
 |--------|------------|
-| Framework | React.js (Vite) |
+| Framework | React.js |
 | Styling | Tailwind CSS v3 |
 | Animations | Framer Motion |
 | Routing | React Router DOM v6 |
