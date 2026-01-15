@@ -83,7 +83,7 @@ Instead of dumping raw data, GitPeek emphasizes **patterns, behavior, and trends
    - Repository insights  
    - Activity indicators  
 
-All analysis is done in the browser using JavaScript.
+
 
 ---
 
