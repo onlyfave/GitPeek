@@ -136,7 +136,7 @@ GitPeek/
 
 ### Prerequisites
 - Node.js
-- npm or ya
+- npm 
 
 ### Setup
 
