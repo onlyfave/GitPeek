@@ -19,7 +19,7 @@
 
 ## 📌 Why GitPeek Exists
 
-GitHub profiles are powerful, but they’re noisy.
+GitHub profiles are powerful, but can be noisy.
 
 Recruiters, collaborators, and even developers themselves often struggle to quickly understand:
 - What kind of developer is this?
